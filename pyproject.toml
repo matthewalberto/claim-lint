@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claim-lint"
+version = "1.0.0"
+description = "Check outward copy against a table of claims you've retracted or aren't allowed to make."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Matthew Alberto" }]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+yaml = ["pyyaml>=6"]
+
+[project.scripts]
+claim-lint = "claim_lint:main"
+
+[tool.setuptools]
+py-modules = ["claim_lint"]

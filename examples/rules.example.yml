@@ -1,0 +1,15 @@
+# The same idea as rules.example.md, in YAML. Needs PyYAML (pip install pyyaml).
+rules:
+  - pattern: guaranteed compliance
+    why: No software can guarantee a customer's compliance.
+    instead: helps your team spot issues early
+  - pattern: '/\bHIPAA[- ]certified\b/'
+    why: There's no official HIPAA certification for software.
+    instead: supports HIPAA safeguards (see our security page)
+  - pattern: never makes mistakes
+    why: Every AI system makes mistakes.
+    instead: flags low-confidence results for human review
+  - pattern: guarantee* funding
+    why: Grant decisions belong to the funder.
+    instead: strengthens your application
+    org: grants-team
